@@ -1,6 +1,7 @@
 {
   "name": "cursor-agent",
   "install": "npm ci",
+  "start": "[ -d node_modules/better-sqlite3 ] || npm ci",
   "terminals": [
     {
       "name": "server",
