@@ -1,0 +1,20 @@
+{
+  "name": "cursor-agent",
+  "install": "npm ci",
+  "terminals": [
+    {
+      "name": "server",
+      "command": "npm run dev:server",
+      "description": "Express + SQLite Tasks API on http://localhost:3001"
+    },
+    {
+      "name": "web",
+      "command": "npm run dev:web",
+      "description": "React + Vite web app on http://localhost:5173 (proxies /api to the server)"
+    }
+  ],
+  "ports": [
+    { "name": "api", "port": 3001 },
+    { "name": "web", "port": 5173 }
+  ]
+}
